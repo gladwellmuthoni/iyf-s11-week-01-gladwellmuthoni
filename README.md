@@ -37,10 +37,6 @@ Merge Conflicts: Encountered conflicts in index.html while pulling remote change
 
 ## Screenshots (optional)
 C:\Users\Administrator\Desktop\iyf-s11-week-01-gladwellmuthoni\images\image-1.jpg
-
-
-
-
-
+ 
 ## Live Demo (if deployed)
-[View Live Demo](https://your-deployed-url.com)
+https://gladwellmuthoni.github.io/iyf-s11-week-01-gladwellmuthoni/
