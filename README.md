@@ -40,3 +40,5 @@ C:\Users\Administrator\Desktop\iyf-s11-week-01-gladwellmuthoni\images\image-1.jp
  
 ## Live Demo (if deployed)
 https://gladwellmuthoni.github.io/iyf-s11-week-01-gladwellmuthoni/
+My article Dev.to Url
+https://dev.to/gladwell_wathuti/why-semantic-html-is-a-superpower-for-your-website-1hoh
