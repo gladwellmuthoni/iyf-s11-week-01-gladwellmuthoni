@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me-My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get In Touch</h2>
+        <p>Have a question or want to work together? Drop a message below!</p>
+
+        <section class="contact-form">
+            <form action="/submit" method="POST">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div><br>
+                
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div><br>
+                
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div><br>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <br>
+        <section class="contact-info">
+            <h3>Other Ways to Connect</h3>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+            <p><strong>Timezone:</strong> East Africa Time (EAT / UTC+3)</p>
+            
+            <p>Find me on:</p>
+            <ul>
+                <li><a href="https://github.com/gladwellmuthoni" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/gladwellmuthoni/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gladwell. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

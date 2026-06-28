@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects-My Portfolio</title>
+    <style>
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>My Projects</h2>
+        <section class="project-container">
+            <article>
+                <img src="images\image-1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A screenshot of my task tracker application showing a list of daily tasks and a progress bar.</p>
+            </article>
+            <article class="project-card">
+                <img src="images\image-2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>A screenshort of my semantic html file.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
