@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(83, 43, 226); font-family: Arial, sans-serif; margin: 0; padding: 0; color: #ffffff;">
+
+    <header style="background-color: rgba(0, 0, 0, 0.2); padding: 15px 0;">
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 40px;">
+                <li><a href="index.html" style="color: #fff; text-decoration: none; font-weight: 600;">Home</a></li>
+                <li><a href="about.html" style="color: #fff; text-decoration: none; font-weight: 600;">About</a></li>
+                <li><a href="projects.html" class="active" style="color: #fff; text-decoration: none; font-weight: 600; border-bottom: 2px solid #fff; padding-bottom: 3px;">Projects</a></li>
+                <li><a href="contact.html" style="color: #fff; text-decoration: none; font-weight: 600;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 40px auto; padding: 0 20px; text-align: center;">
+        <h1 style="font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">My Projects</h1>
+        <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 40px;">Here are some of the web applications and code milestones I've built.</p>
+
+        <section class="project-container">
+            <article class="project-card">
+                <img src="images/image-1.jpg" alt="Project 1 Task Tracker">
+                <h3 style="color: #ffeb3b; margin-top: 0;">Task Tracker Application</h3>
+                <p style="font-size: 0.95rem; line-height: 1.5;">A screenshot of my task tracker application showing a list of daily tasks and a progress bar.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="images/image-2.jpg" alt="Project 2 Semantic HTML">
+                <h3 style="color: #ffeb3b; margin-top: 0;">Semantic HTML Structure</h3>
+                <p style="font-size: 0.95rem; line-height: 1.5;">A screenshot of my semantic HTML file showcasing clean layout principles.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background-color: rgba(0, 0, 0, 0.3); font-size: 0.9rem; margin-top: 60px;">
+        <p style="margin: 0; opacity: 0.8;">&copy; 2026 Gladwell. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

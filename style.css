@@ -1,33 +1,36 @@
+/* ==========================================
+   1. CSS VARIABLES & THEME
+   ========================================== */
 :root {
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
     
-    --font-xs: 0.75rem; --font-sm: 0.875rem; --font-base: 1rem;
-    --font-lg: 1.125rem; --font-xl: 1.25rem; --font-2xl: 1.5rem;
-    --font-3xl: 1.875rem; --font-4xl: 2.25rem;
-    /*color palette*/
+    --font-xs: 0.75rem; 
+    --font-sm: 0.875rem; 
+    --font-base: 1rem;
+    --font-lg: 1.125rem; 
+    --font-xl: 1.25rem; 
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem; 
+    --font-4xl: 2.25rem;
+    
+    /* Color Palette */
     --color-primary: #4f46e5;
     --color-secondary: #0ea5e9;
     --color-background: #ffffff;
     --color-text: #1d2a3d;
     --color-muted: grey;
 }
+
+/* ==========================================
+   2. GLOBAL RESETS & BASE STYLES
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6{
-    color: black; 
-    margin-bottom: 0.5em;
-    font-weight: 600;
-}
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
+
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -36,46 +39,73 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
 }
-.nav-links {
-    display: flex;
-    gap: 20px; 
-    list-style: none;
+
+h1, h2, h3, h4, h5, h6 {
+    color: black; 
+    margin-bottom: 0.5em;
+    font-weight: 600;
 }
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* ==========================================
+   3. NAVIGATION & HEADER
+   ========================================== */
 .menu-toggle { 
-    display: block; 
-} /* Show hamburger on mobile */
+    display: block; /* Show hamburger on mobile */
+} 
 
 .nav-menu {
     display: none; /* Hide menu by default on mobile */
     background: #333;
     padding: 20px;
 }
-@media (min-width: 1024px) {
-.menu-toggle { 
-        display: none; 
-    } /* Hide hamburger on desktop */
+
+.nav-links {
+    display: flex;
+    gap: 20px; 
+    list-style: none;
 }
- .nav-menu {
+
+/* Desktop Navigation Adjustments */
+@media (min-width: 1024px) {
+    .menu-toggle { 
+        display: none; /* Hide hamburger on desktop */
+    } 
+
+    .nav-menu {
         display: block; 
         background: transparent;
     }
-.nav-links {
+
+    .nav-links {
         flex-direction: row; 
         display: flex;
     }
-    /* Mobile: Stacking */
+}
+
+/* ==========================================
+   4. LAYOUT SECTIONS & HERO
+   ========================================== */
 .hero {
     display: flex;
     flex-direction: column; 
     text-align: center;
 }
-@media (min-width:1024px) {
+
+@media (min-width: 1024px) {
     .hero {
         flex-direction: row; 
         align-items: center;
         justify-content: space-between;
     }
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between; 
@@ -84,10 +114,14 @@ body {
 
 .footer-container {
     display: flex;
-    justify-content: center;      
-    width: 100%;                  
+    justify-content: center;       
+    width: 100%;                   
     margin-top: 20px;
 }
+
+/* ==========================================
+   5. GRIDS & CARDS
+   ========================================== */
 .card-container, 
 .project-grid {
     display: grid;
@@ -110,12 +144,15 @@ body {
         grid-template-columns: repeat(3, 1fr); 
     }
 }
-.project-grid img{
+
+.project-grid img {
     width: 100%;       
-    height: 250px;     
+    height: 250px;    
     object-fit: cover;
     display: block;  
 }
+
+/* Magazine Layout Template */
 .magazine-container {
     display: grid;
     grid-template-columns: 200px 1fr; 
@@ -132,10 +169,13 @@ body {
 .main-content { grid-area: main; }
 .footer { grid-area: footer; }
 
-/* Smooth transitions for interactive elements */
+/* ==========================================
+   6. INTERACTIVE STATES & TRANSITIONS
+   ========================================== */
 a, button, .project-card {
     transition: all 0.3s ease;
 }
+
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 6px black; 

@@ -1,50 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home-My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body style="background-color:rgb(83, 43, 226); font-family: Arial, sans-serif; margin: 0; padding: 0;">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(83, 43, 226); font-family: Arial, sans-serif; margin: 0; padding: 0; color: #ffffff;"></body>
+<header style="background-color: rgba(0, 0, 0, 0.2); padding: 15px 0;">
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 40px;">
+                <li><a href="index.html" class="active" style="color: #fff; text-decoration: none; font-weight: 600; border-bottom: 2px solid #fff; padding-bottom: 3px;">Home</a></li>
+                <li><a href="about.html" style="color: #fff; text-decoration: none; font-weight: 600;">About</a></li>
+                <li><a href="projects.html" style="color: #fff; text-decoration: none; font-weight: 600;">Projects</a></li>
+                <li><a href="contact.html" style="color: #fff; text-decoration: none; font-weight: 600;">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <h1>Hi, I'm Gladwell</h1>
-        <p>Crafting digital experiences & solving problems through code.</p>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero" style="text-align: center; padding: 100px 20px; color: #fff; background: rgba(0, 0, 0, 0.6);">
+            <h1 style="font-size: 3rem; margin-bottom: 10px;">Hi, I'm Gladwell Muthoni</h1>
+            <p style="font-size: 1.3rem; margin-bottom: 30px;">Aspiring Full-Stack Developer & Computer Science Student</p>
+            <a href="projects.html" style="background-color: #2e7d32; color: white; padding: 14px 28px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1rem; transition: background 0.3s;">View My Projects</a>
+        </section>
 
-      <hr />
-
-      <!-- Brief Intro -->
-      <section class="intro">
-        <h2>Welcome to my space</h2>
-        <p>
-          I am a passionate developer currently building my skills in web
-          development. Explore my site to learn more about my background, check
-          out the projects I've been working on, or get in touch with me!
-        </p>
-
-        <div class="links">
-          <a href="about.html">Learn more about me</a>
-          <a href="project.html">View my work</a>
-        </div>
-      </section>
+        <!-- Highlights Section -->
+        <section style="display: flex; justify-content: center; gap: 30px; padding: 60px 20px; background: rgba(255, 255, 255, 0.95); flex-wrap: wrap;">
+            <div style="background: #f9f9f9; padding: 30px; border-radius: 8px; width: 320px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="color: #1b5e20;">💻 Web Development</h3>
+                <p>Building responsive frontends and backend logic using JavaScript, React, Node.js, HTML, and CSS.</p>
+            </div>
+            <div style="background: #f9f9f9; padding: 30px; border-radius: 8px; width: 320px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <h3 style="color: #1b5e20;">📊 Databases & Logic</h3>
+                <p>Designing structured SQLite database schemas, writing seed scripts, and problem-solving through clean code.</p>
+            </div>
+        </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 Gladwell. All rights reserved.</p>
+    <footer style="background-color: #1b5e20; color: white; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%;">
+        <p>&copy; 2026 Gladwell Muthoni. All rights reserved.</p>
     </footer>
-  </body>
+
+</body>
 </html>
